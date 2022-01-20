@@ -42,16 +42,11 @@ class BinaryTreeDemo {
     public static void main(String args[])
     {
         BinaryTreeDemo binaryTreeDemo = new BinaryTreeDemo();
-        BSTNode root = new BSTNode(5);
+        BSTNode root = new BSTNode(56);
         System.out.println("Binary Tree Example");
         System.out.println("Building binaryTreeDemo with root value " + root.value);
-        binaryTreeDemo.insert(root, 2);
-        binaryTreeDemo.insert(root, 4);
-        binaryTreeDemo.insert(root, 8);
-        binaryTreeDemo.insert(root, 6);
-        binaryTreeDemo.insert(root, 7);
-        binaryTreeDemo.insert(root, 3);
-        binaryTreeDemo.insert(root, 9);
+        binaryTreeDemo.insert(root, 30);
+        binaryTreeDemo.insert(root, 70);
         System.out.println("Traversing binaryTreeDemo in order");
         binaryTreeDemo.traverseInOrder(root);
 
