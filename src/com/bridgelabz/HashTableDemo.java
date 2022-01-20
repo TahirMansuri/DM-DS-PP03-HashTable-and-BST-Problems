@@ -31,5 +31,8 @@ public class HashTableDemo {
         //Show Frequent Words Count
         linkedList.showFrequent();
 
+        //Insert Map Item in Linked List
+        linkedList.mapInList();
+        linkedList.showLinkedList();
     }
 }

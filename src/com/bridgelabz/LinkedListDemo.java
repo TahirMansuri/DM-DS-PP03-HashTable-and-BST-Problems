@@ -3,6 +3,7 @@ package com.bridgelabz;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 
 class Node <T> {
     public T data;
@@ -16,6 +17,8 @@ class Node <T> {
 }
 
 class LinkedList <T> {
+
+    Map<T,Integer> wordsFrequency = new HashMap<T,Integer>();
 
     int location = 0;
 
@@ -50,7 +53,7 @@ class LinkedList <T> {
 
     //Show Frequent String
     public void showFrequent() {
-        Map<T,Integer> wordsFrequency = new HashMap<T,Integer>();
+
         if(head == null) {
             System.out.println("Linked List is Empty.");
         } else {
@@ -64,6 +67,14 @@ class LinkedList <T> {
                 temp = temp.next;
             }
             System.out.println(wordsFrequency);
+        }
+    }
+
+    //Store Map Object in Linked List
+    public void mapInList() {
+        for(Map.Entry<T,Integer> M : wordsFrequency.entrySet()) {
+            System.out.println(M.getKey()+" : "+M.getValue());
+            insertLast((T) (M.getKey()+":"+M.getValue()));
         }
     }
 }
