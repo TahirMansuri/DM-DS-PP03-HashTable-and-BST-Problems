@@ -10,7 +10,7 @@ public class HashTableDemo {
         System.out.println("Welcome to Hash Table and Binary Tree Problem Developed by, Tahir Mansuri.");
 
         //Creating Linked List Object
-        LinkedList<String> linkedList = new LinkedList();
+        LinkedList<Integer> linkedList = new LinkedList();
         Scanner sc = new Scanner(System.in);
 
         //Getting String Input from User
@@ -22,7 +22,7 @@ public class HashTableDemo {
 
         //Insert each separated string word in Linked List from Last
         for(String x : a) {
-            linkedList.insertLast(x);
+            linkedList.insertLast(Integer.parseInt(x));
         }
 
         //Showing the Linked List String
@@ -32,7 +32,13 @@ public class HashTableDemo {
         linkedList.showFrequent();
 
         //Insert Map Item in Linked List
-        linkedList.mapInList();
+       // linkedList.mapInList();
+       // linkedList.showLinkedList();
+
+        //Remove the Word from Linked List
+        System.out.println("Enter the Word to Remove from String : ");
+        linkedList.removeWord(sc.nextInt());
+
         linkedList.showLinkedList();
     }
 }
