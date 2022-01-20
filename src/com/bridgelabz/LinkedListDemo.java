@@ -18,8 +18,6 @@ class LinkedList <T extends Comparable<T>> {
 
     Map<T,Integer> wordsFrequency = new HashMap<T,Integer>();
 
-    int location = 0;
-
     Node head;
     Node tail;
     //Insert Data from Last
@@ -32,8 +30,6 @@ class LinkedList <T extends Comparable<T>> {
             tail.next = newNode;
             tail = newNode;
         }
-        location++;
-        System.out.println("Location:"+location);
     }
 
     //Display Node in Linked List
